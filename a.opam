@@ -8,7 +8,7 @@ bug-reports: "https://github.com/ocamllabs/opam-monorepo/issues"
 depends: [
   "dune" {>= "2.9"}
   "ocaml" {>= "4.08.0"}
-  "b"
+  "b" {= version}
 ]
 dev-repo: "git+https://github.com/NathanReb/test-multi-opam-monorepo.git"
 build: [ "dune" "build" "-p" name "-j" jobs "@install" "@runtest" {with-test} ]
